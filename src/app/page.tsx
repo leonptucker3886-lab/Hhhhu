@@ -12,7 +12,8 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 py-20">
           {/* Header */}
           <div className="text-center mb-16">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 bg-clip-text text-transparent">
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 bg-clip-text text-transparent flex items-center justify-center gap-4">
+            <span className="text-8xl md:text-9xl">🎰</span>
             Company Cookout
           </h1>
           <div className="text-2xl md:text-4xl font-bold text-yellow-400 mb-4">
@@ -33,7 +34,7 @@ export default function Home() {
                 >
                   🚪 Garage Casino #1 🏠
                 </Link>
-                <p className="mt-3 text-yellow-300 text-sm font-semibold">10 Classic Casino Games</p>
+                <p className="mt-3 text-yellow-300 text-sm font-semibold">Classic Casino Games</p>
                 <div className="mt-4 text-left bg-yellow-900/20 rounded-lg p-4 text-xs text-yellow-200 space-y-1">
                   <div>🎰 Sun N Fun Slots</div>
                   <div>🃏 White Jack Blackjack</div>
