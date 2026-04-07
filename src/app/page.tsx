@@ -19,8 +19,8 @@ export default function Home() {
           <div className="text-2xl md:text-4xl font-bold text-yellow-400 mb-4">
             presents SunNFun Slots
           </div>
-            <p className="text-xl md:text-2xl text-neutral-300 max-w-3xl mx-auto">
-              10 fully playable games in our pondside casino - slots, blackjack, detective mysteries, and more!
+            <p className="text-xl md:text-2xl text-neutral-300 max-w-3xl mx-auto italic">
+              "Forget about it! Dis casino's got more action than a mob family reunion!"
             </p>
           </div>
 
@@ -36,16 +36,16 @@ export default function Home() {
                 </Link>
                 <p className="mt-3 text-yellow-300 text-sm font-semibold">Classic Casino Games</p>
                 <div className="mt-4 text-left bg-yellow-900/20 rounded-lg p-4 text-xs text-yellow-200 space-y-1">
-                  <div>🎰 Sun N Fun Slots</div>
-                  <div>🃏 White Jack Blackjack</div>
-                  <div>🕵️ Who's the Snitch?</div>
-                  <div>🌳 Hiding in the Trees</div>
-                  <div>🪓 Achy Breaky Axe</div>
-                  <div>🦆 Task Force: Duck N Cover</div>
-                  <div>🎱 Firewood Balls</div>
-                  <div>🐕 Show me your Pitties</div>
-                  <div>🍹 Drinking Again</div>
-                  <div>🌳 Night Vision Peepin'</div>
+                  <div>"Fuhgeddaboudit, this slots game is da real deal!"</div>
+                  <div>"You wanna play blackjack? Make sure you don't break da bank!"</div>
+                  <div>"Snitches get stitches, but this detective game pays da bills!"</div>
+                  <div>"Hide in da trees all you want, but da loot calls your name!"</div>
+                  <div>"Swing dat axe like you're choppin' down da competition!"</div>
+                  <div>"Duck and cover, boys - da action never stops!"</div>
+                  <div>"Pool balls flyin' like bullets in a drive-by!"</div>
+                  <div>"Show me your pitties? Make 'em winners or walk away!"</div>
+                  <div>"Drinkin' again? Dis game's da ultimate buzz!"</div>
+                  <div>"Night vision peepin'? We see everything comin'!"</div>
                 </div>
               </div>
 
@@ -58,26 +58,26 @@ export default function Home() {
                 </Link>
                 <p className="mt-3 text-purple-300 text-sm font-semibold">Social Slot Machine Experience</p>
                 <div className="mt-4 text-left bg-purple-900/20 rounded-lg p-4 text-xs text-purple-200 space-y-1">
-                  <div>🎰 6x5 Cluster Slots</div>
-                  <div>💰 PARK COINS Economy</div>
-                  <div>👤 User Profiles & History</div>
-                  <div>🏆 Leaderboards & Rankings</div>
-                  <div>⚙️ Admin Panel</div>
-                  <div>🎁 Daily Bonuses</div>
-                  <div>📱 Mobile PWA</div>
-                  <div>🔄 Auto-Spin Feature</div>
-                  <div>🎊 Free Spins Bonuses</div>
-                  <div>💾 Local Data Storage</div>
+                  <div>"Dis cluster slots game? It's off da charts, capisce?"</div>
+                  <div>"Park coins? More like mob money - untraceable!"</div>
+                  <div>"Your profile? We know who you are, and what you did last summer!"</div>
+                  <div>"Leaderboards? Only da best make it to da top, see?"</div>
+                  <div>"Admin panel? That's for da boss, not for you!"</div>
+                  <div>"Daily bonuses? Like protection money, but you get somethin' back!"</div>
+                  <div>"Mobile PWA? Dis game goes wherever da action is!"</div>
+                  <div>"Auto-spin? Let da machine do da work while you count da dough!"</div>
+                  <div>"Free spins? Like gettin' off on a technicality!"</div>
+                  <div>"Local storage? Your secrets are safe wit' us!"</div>
                 </div>
               </div>
             </div>
             <div className="space-y-4">
               <p className="text-neutral-400 italic text-lg">
-                &ldquo;Choose your casino adventure!&rdquo;
+                "Ey, you gonna play or what? Da tables are waitin'!"
               </p>
               <div className="text-sm text-neutral-500 space-y-1">
-                <p>🟡 <strong>Garage Casino #1:</strong> Traditional casino with pondside charm</p>
-                <p>🟣 <strong>SunNFun Residents Casino #2:</strong> Social gaming with trailer park vibes</p>
+                <p>🟡 <strong>Garage Casino #1:</strong> "Da joint where wiseguys become high-rollers!"</p>
+                <p>🟣 <strong>SunNFun Residents Casino #2:</strong> "Trailer park meets da big city - social slots wit' attitude!"</p>
               </div>
             </div>
           </div>
@@ -112,7 +112,7 @@ export default function Home() {
           {/* Footer Message */}
           <div className="text-center mt-16">
             <p className="text-neutral-500 italic">
-              &ldquo;Remember folks, what happens in the slots stays in the slots... or does it? 😉&rdquo;
+              "Remember, in dis casino, what happens at da tables stays at da tables... unless you owe us money! 💰"
             </p>
           </div>
         </div>
