@@ -52,19 +52,31 @@ export async function GET() {
         }
 
         .title {
-            font-size: 28px;
-            text-shadow: 4px 4px 0 #ff0000, -4px -4px 0 #00ff00;
-            letter-spacing: 3px;
+            font-size: 18px;
+            text-shadow: 2px 2px 0 #ff0000, -2px -2px 0 #00ff00;
+            letter-spacing: 2px;
         }
 
         .coin-balance {
             background: #000;
-            padding: 8px 20px;
-            border: 4px solid #00ff00;
-            font-size: 22px;
+            padding: 6px 12px;
+            border: 3px solid #00ff00;
+            font-size: 14px;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+
+            .coin-balance {
+                padding: 4px 8px;
+                font-size: 12px;
+            }
         }
 
         .screen {
@@ -82,7 +94,7 @@ export async function GET() {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px 10px;
+            padding: 10px 5px;
             background: #0a0500;
             position: relative;
         }
@@ -90,12 +102,24 @@ export async function GET() {
         #grid {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
-            gap: 8px;
-            padding: 15px;
+            gap: 4px;
+            padding: 8px;
             background: #1f1200;
-            border: 12px solid #664400;
-            border-radius: 12px;
-            box-shadow: 0 0 40px rgba(255, 200, 0, 0.5);
+            border: 8px solid #664400;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(255, 200, 0, 0.5);
+            max-width: 95vw;
+            width: auto;
+        }
+
+        @media (max-width: 768px) {
+            #grid {
+                grid-template-columns: repeat(6, minmax(35px, 1fr));
+                gap: 2px;
+                padding: 6px;
+                border: 6px solid #664400;
+                max-width: 98vw;
+            }
         }
 
         .symbol {
@@ -111,6 +135,16 @@ export async function GET() {
             box-shadow: inset 0 0 25px rgba(0,0,0,0.9), 0 0 15px rgba(255, 200, 0, 0.6);
             transition: transform 0.2s, filter 0.2s;
             position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .symbol {
+                width: 35px;
+                height: 35px;
+                border: 2px solid #ffcc00;
+                font-size: 24px;
+                border-radius: 4px;
+            }
         }
 
         .symbol.wild { filter: brightness(1.4) drop-shadow(0 0 12px #00ffff); }
@@ -130,16 +164,26 @@ export async function GET() {
         }
 
         .log {
-            height: 68px;
+            height: 60px;
             background: #000;
             color: #0f0;
-            padding: 12px;
-            font-size: 13px;
+            padding: 8px;
+            font-size: 10px;
             overflow-y: auto;
-            margin: 0 20px 10px;
-            border: 4px solid #00ff00;
+            margin: 0 10px 8px;
+            border: 3px solid #00ff00;
             text-align: left;
-            line-height: 1.3;
+            line-height: 1.2;
+        }
+
+        @media (max-width: 768px) {
+            .log {
+                height: 50px;
+                padding: 6px;
+                font-size: 9px;
+                margin: 0 5px 6px;
+                border: 2px solid #00ff00;
+            }
         }
 
         canvas#confetti {
@@ -187,15 +231,15 @@ export async function GET() {
                 <canvas id="confetti" width="1000" height="700"></canvas>
             </div>
 
-            <div class="controls bg-[#220000] p-5 flex flex-wrap justify-center gap-4 items-center border-t-8 border-[#ffcc00]">
-                <button onclick="changeBet(-10)" class="bg-green-600 text-white px-6 py-3 text-xl border-4 border-white shadow-[0_6px_0_#166534]">–10</button>
-                <div class="text-3xl font-bold">BET <span id="betAmount" class="text-green-400">20</span></div>
-                <button onclick="changeBet(10)" class="bg-green-600 text-white px-6 py-3 text-xl border-4 border-white shadow-[0_6px_0_#166534]">+10</button>
+            <div class="controls bg-[#220000] p-3 md:p-5 flex flex-wrap justify-center gap-2 md:gap-4 items-center border-t-4 md:border-t-8 border-[#ffcc00]">
+                <button onclick="changeBet(-10)" class="bg-green-600 text-white px-3 py-2 md:px-6 md:py-3 text-sm md:text-xl border-2 md:border-4 border-white shadow-[0_3px_0_#166534] md:shadow-[0_6px_0_#166534]">–10</button>
+                <div class="text-xl md:text-3xl font-bold">BET <span id="betAmount" class="text-green-400">20</span></div>
+                <button onclick="changeBet(10)" class="bg-green-600 text-white px-3 py-2 md:px-6 md:py-3 text-sm md:text-xl border-2 md:border-4 border-white shadow-[0_3px_0_#166534] md:shadow-[0_6px_0_#166534]">+10</button>
 
-                <button onclick="spin()" id="spinBtn" class="bg-red-600 text-white px-16 py-6 text-4xl border-8 border-yellow-400 shadow-[0_10px_0_#991b1b] flex-1 max-w-xs">SPIN 🪙</button>
+                <button onclick="spin()" id="spinBtn" class="bg-red-600 text-white px-8 py-4 md:px-16 md:py-6 text-2xl md:text-4xl border-4 md:border-8 border-yellow-400 shadow-[0_5px_0_#991b1b] md:shadow-[0_10px_0_#991b1b] flex-1 max-w-xs">SPIN 🪙</button>
 
-                <button onclick="toggleAuto()" id="autoBtn" class="bg-green-600 text-white px-8 py-6 text-2xl border-4 border-white">AUTO</button>
-                <button onclick="buyFeature()" class="bg-emerald-600 text-white px-8 py-6 text-2xl border-4 border-white">BUY BONUS (100×)</button>
+                <button onclick="toggleAuto()" id="autoBtn" class="bg-green-600 text-white px-4 py-3 md:px-8 md:py-6 text-sm md:text-2xl border-2 md:border-4 border-white">AUTO</button>
+                <button onclick="buyFeature()" class="bg-emerald-600 text-white px-4 py-3 md:px-8 md:py-6 text-sm md:text-2xl border-2 md:border-4 border-white">BUY BONUS</button>
             </div>
 
             <div id="gameLog" class="log">Welcome to the park! Spin with PARK COINS. Big clusters = big wins!</div>
