@@ -49,21 +49,23 @@ export default function Lobby() {
             </div>
           </Link>
 
-          {/* Trailer Park Slots */}
-          <div className="bg-gradient-to-br from-neutral-800 to-neutral-900 p-8 rounded-xl border border-neutral-700 hover:border-yellow-500/50 transition-all duration-300 group cursor-pointer">
-            <div className="text-center">
-              <div className="text-6xl mb-4">🎰</div>
-              <h3 className="text-2xl font-bold text-yellow-400 mb-3 group-hover:text-yellow-300">
-                Trailer Park Slots
-              </h3>
-              <p className="text-neutral-300 mb-6">
-                &ldquo;Spin those reels like you&apos;re watchin&apos; soaps at the laundromat! Big payouts await!&rdquo;
-              </p>
-              <button className="w-full bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-colors">
-                Coming Soon
-              </button>
+          {/* Sun N Fun Slots */}
+          <Link href="/slots" className="group">
+            <div className="bg-gradient-to-br from-neutral-800 to-neutral-900 p-8 rounded-xl border border-neutral-700 hover:border-yellow-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105 cursor-pointer">
+              <div className="text-center">
+                <div className="text-6xl mb-4">🎰</div>
+                <h3 className="text-2xl font-bold text-yellow-400 mb-3 group-hover:text-yellow-300">
+                  Sun N Fun Slots
+                </h3>
+                <p className="text-neutral-300 mb-6">
+                  &ldquo;Lakeside cookout chaos! Kick them pigs and watch the money fly!&rdquo;
+                </p>
+                <div className="text-green-400 font-bold text-lg">
+                  🟢 LIVE NOW
+                </div>
+              </div>
             </div>
-          </div>
+          </Link>
 
           {/* Moonshine Poker */}
           <div className="bg-gradient-to-br from-neutral-800 to-neutral-900 p-8 rounded-xl border border-neutral-700 hover:border-yellow-500/50 transition-all duration-300 group cursor-pointer">
