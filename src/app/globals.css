@@ -1,1 +1,44 @@
 @import "tailwindcss";
+
+/* Casino-themed global styles */
+:root {
+  --background: #171717;
+  --foreground: #ffffff;
+  --accent: #eab308;
+}
+
+* {
+  border-color: rgba(64, 64, 64, 0.5);
+}
+
+/* Custom scrollbar for casino theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #171717;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #eab308;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #facc15;
+}
+
+/* Animation for glowing effects */
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(234, 179, 8, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(234, 179, 8, 0.6);
+  }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}

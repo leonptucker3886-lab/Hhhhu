@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Template",
-  description: "A minimal Next.js starter template",
+  title: "cookout SunNFun Slots - Hillbilly Casino Fun",
+  description: "Welcome to the pokey! High-stakes slots with more fun than a jailbreak party. Play now and spin your way to freedom!",
 };
 
 export default function RootLayout({
