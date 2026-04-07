@@ -209,7 +209,7 @@ export default function TreeHideGame() {
         {/* Game Title */}
         <div className="text-center mb-8">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-green-400 via-green-300 to-green-500 bg-clip-text text-transparent">
-            Night Vision Peepin'
+            Hidin in them Trees
           </h1>
           <p className="text-xl text-green-100 max-w-2xl mx-auto">
             &ldquo;Peep through the blinds with night vision goggles! Spot the people hidin&apos; in them trees!&rdquo;
@@ -437,7 +437,7 @@ export default function TreeHideGame() {
 
         {/* How to Play */}
         <div className="mt-12 bg-green-700/50 backdrop-blur-sm rounded-xl p-6 max-w-4xl mx-auto">
-          <h3 className="text-xl font-bold text-yellow-400 mb-4 text-center">How to Play: Night Vision Peepin'</h3>
+          <h3 className="text-xl font-bold text-yellow-400 mb-4 text-center">How to Play: Hidin in them Trees</h3>
           <div className="grid md:grid-cols-2 gap-6 text-sm text-green-100">
             <div>
               <h4 className="font-bold text-white mb-2">🎯 Objective</h4>

@@ -91,10 +91,10 @@ export default function Lobby() {
               <div className="text-center">
                 <div className="text-4xl md:text-6xl mb-2 md:mb-4">🌳</div>
                 <h3 className="text-lg md:text-2xl font-bold text-yellow-400 mb-2 md:mb-3 group-hover:text-yellow-300">
-                  Night Vision Peepin'
+                  Hidin in them Trees
                 </h3>
                 <p className="text-amber-100 text-sm md:text-base mb-3 md:mb-6 line-clamp-2">
-                  &ldquo;Night vision through blinds!&rdquo;
+                  &ldquo;Night vision peepin&apos;!&rdquo;
                 </p>
                 <div className="text-green-400 font-bold text-sm md:text-lg">
                   🟢 LIVE NOW
@@ -203,6 +203,60 @@ export default function Lobby() {
             </div>
           </div>
         </div>
+
+        {/* Show me your Pitties */}
+        <Link href="/pitties" className="group">
+          <div className="bg-gradient-to-br from-pink-800 to-pink-900 p-4 md:p-8 rounded-xl border border-pink-700 hover:border-yellow-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105 cursor-pointer">
+            <div className="text-center">
+              <div className="text-4xl md:text-6xl mb-2 md:mb-4">🐕</div>
+              <h3 className="text-lg md:text-2xl font-bold text-yellow-400 mb-2 md:mb-3 group-hover:text-yellow-300">
+                Show me your Pitties
+              </h3>
+              <p className="text-pink-100 text-sm md:text-base mb-3 md:mb-6 line-clamp-2">
+                &ldquo;Pitbull show contest!&rdquo;
+              </p>
+              <div className="text-green-400 font-bold text-sm md:text-lg">
+                🟢 LIVE NOW
+              </div>
+            </div>
+          </div>
+        </Link>
+
+        {/* Drinking Again */}
+        <Link href="/drinking" className="group">
+          <div className="bg-gradient-to-br from-purple-800 to-purple-900 p-4 md:p-8 rounded-xl border border-purple-700 hover:border-yellow-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105 cursor-pointer">
+            <div className="text-center">
+              <div className="text-4xl md:text-6xl mb-2 md:mb-4">🍹</div>
+              <h3 className="text-lg md:text-2xl font-bold text-yellow-400 mb-2 md:mb-3 group-hover:text-yellow-300">
+                Drinking Again
+              </h3>
+              <p className="text-purple-100 text-sm md:text-base mb-3 md:mb-6 line-clamp-2">
+                &ldquo;Lakeside bartending!&rdquo;
+              </p>
+              <div className="text-green-400 font-bold text-sm md:text-lg">
+                🟢 LIVE NOW
+              </div>
+            </div>
+          </div>
+        </Link>
+
+        {/* Firewood Balls */}
+        <Link href="/pool" className="group">
+          <div className="bg-gradient-to-br from-amber-800 to-amber-900 p-4 md:p-8 rounded-xl border border-amber-700 hover:border-yellow-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105 cursor-pointer">
+            <div className="text-center">
+              <div className="text-4xl md:text-6xl mb-2 md:mb-4">🎱</div>
+              <h3 className="text-lg md:text-2xl font-bold text-yellow-400 mb-2 md:mb-3 group-hover:text-yellow-300">
+                Firewood Balls
+              </h3>
+              <p className="text-amber-100 text-sm md:text-base mb-3 md:mb-6 line-clamp-2">
+                &ldquo;Pool by the campfire! Sink &apos;em!&rdquo;
+              </p>
+              <div className="text-green-400 font-bold text-sm md:text-lg">
+                🟢 LIVE NOW
+              </div>
+            </div>
+          </div>
+        </Link>
 
         {/* Coming Soon Message */}
         <div className="text-center bg-neutral-800/50 backdrop-blur-sm p-8 rounded-xl border border-neutral-700 max-w-2xl mx-auto">
