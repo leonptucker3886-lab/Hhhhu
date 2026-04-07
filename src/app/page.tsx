@@ -12,12 +12,12 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 py-20">
           {/* Header */}
           <div className="text-center mb-16">
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 bg-clip-text text-transparent">
-              Garage Casino #1
-            </h1>
-            <div className="text-2xl md:text-4xl font-bold text-yellow-400 mb-4">
-              Complete Casino Experience
-            </div>
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 bg-clip-text text-transparent">
+            Company Cookout
+          </h1>
+          <div className="text-2xl md:text-4xl font-bold text-yellow-400 mb-4">
+            presents SunNFun Slots
+          </div>
             <p className="text-xl md:text-2xl text-neutral-300 max-w-3xl mx-auto">
               10 fully playable games in our pondside casino - slots, blackjack, detective mysteries, and more!
             </p>

@@ -31,24 +31,38 @@ export async function GET() {
         }
 
         .app {
-            max-width: 1000px;
+            max-width: 100%;
             margin: 0 auto;
             background: #111;
-            border: 16px solid #ff6600;
+            border: 8px solid #ff6600;
             border-image: linear-gradient(#ffcc00, #ff3300, #ffcc00) 1;
-            box-shadow: 0 0 60px #ff0000, inset 0 0 100px rgba(255, 100, 0, 0.7);
+            box-shadow: 0 0 30px #ff0000, inset 0 0 50px rgba(255, 100, 0, 0.7);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
         }
 
+        @media (max-width: 768px) {
+            .app {
+                border: 4px solid #ff6600;
+                box-shadow: 0 0 15px #ff0000, inset 0 0 25px rgba(255, 100, 0, 0.7);
+            }
+        }
+
         .nav {
             background: #220000;
-            padding: 12px 20px;
+            padding: 8px 12px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 10px solid var(--primary);
+            border-bottom: 6px solid var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                padding: 6px 8px;
+                border-bottom: 4px solid var(--primary);
+            }
         }
 
         .title {
@@ -94,31 +108,43 @@ export async function GET() {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 10px 5px;
+            padding: 5px 2px;
             background: #0a0500;
             position: relative;
+            overflow: hidden;
         }
 
         #grid {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
-            gap: 4px;
-            padding: 8px;
+            gap: 2px;
+            padding: 4px;
             background: #1f1200;
-            border: 8px solid #664400;
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(255, 200, 0, 0.5);
-            max-width: 95vw;
-            width: auto;
+            border: 4px solid #664400;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(255, 200, 0, 0.3);
+            width: 100%;
+            max-width: 320px;
+            margin: 0 auto;
         }
 
         @media (max-width: 768px) {
             #grid {
-                grid-template-columns: repeat(6, minmax(35px, 1fr));
-                gap: 2px;
-                padding: 6px;
-                border: 6px solid #664400;
                 max-width: 98vw;
+                grid-template-columns: repeat(6, minmax(28px, 1fr));
+                gap: 1px;
+                padding: 3px;
+                border: 3px solid #664400;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #grid {
+                max-width: 95vw;
+                grid-template-columns: repeat(6, minmax(24px, 1fr));
+                gap: 1px;
+                padding: 2px;
+                border: 2px solid #664400;
             }
         }
 
@@ -126,24 +152,34 @@ export async function GET() {
             width: 92px;
             height: 92px;
             background: linear-gradient(#333, #1a1a1a);
-            border: 5px solid #ffcc00;
-            border-radius: 8px;
+            border: 3px solid #ffcc00;
+            border-radius: 6px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 62px;
-            box-shadow: inset 0 0 25px rgba(0,0,0,0.9), 0 0 15px rgba(255, 200, 0, 0.6);
-            transition: transform 0.2s, filter 0.2s;
+            font-size: 48px;
+            box-shadow: inset 0 0 15px rgba(0,0,0,0.8), 0 0 8px rgba(255, 200, 0, 0.4);
+            transition: transform 0.1s, filter 0.1s;
             position: relative;
         }
 
         @media (max-width: 768px) {
             .symbol {
-                width: 35px;
-                height: 35px;
-                border: 2px solid #ffcc00;
-                font-size: 24px;
-                border-radius: 4px;
+                width: 28px;
+                height: 28px;
+                border: 1px solid #ffcc00;
+                font-size: 18px;
+                border-radius: 3px;
+                box-shadow: inset 0 0 8px rgba(0,0,0,0.6), 0 0 4px rgba(255, 200, 0, 0.3);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .symbol {
+                width: 24px;
+                height: 24px;
+                font-size: 16px;
+                border-radius: 2px;
             }
         }
 
@@ -204,18 +240,22 @@ export async function GET() {
         <div class="nav">
             <div onclick="navigateTo('game')" class="title cursor-pointer">SUNNFUN RESIDENTS CASINO #2</div>
 
-            <div class="flex items-center gap-6 text-sm">
+            <div class="flex items-center gap-2 md:gap-6 text-xs md:text-sm">
                 <div onclick="navigateTo('game')" class="flex flex-col items-center cursor-pointer hover:text-white">
-                    🎰 GAME
+                    <div class="text-lg md:text-xl">🎰</div>
+                    <div class="text-[8px] md:text-xs">GAME</div>
                 </div>
                 <div onclick="navigateTo('profile')" class="flex flex-col items-center cursor-pointer hover:text-white">
-                    👤 PROFILE
+                    <div class="text-lg md:text-xl">👤</div>
+                    <div class="text-[8px] md:text-xs">PROFILE</div>
                 </div>
                 <div onclick="navigateTo('leaderboard')" class="flex flex-col items-center cursor-pointer hover:text-white">
-                    🏆 LEADERBOARD
+                    <div class="text-lg md:text-xl">🏆</div>
+                    <div class="text-[8px] md:text-xs">BOARD</div>
                 </div>
                 <div onclick="showAdminPanel()" id="adminTab" class="flex flex-col items-center cursor-pointer hover:text-white hidden">
-                    ⚙️ ADMIN
+                    <div class="text-lg md:text-xl">⚙️</div>
+                    <div class="text-[8px] md:text-xs">ADMIN</div>
                 </div>
             </div>
 
@@ -231,41 +271,41 @@ export async function GET() {
                 <canvas id="confetti" width="1000" height="700"></canvas>
             </div>
 
-            <div class="controls bg-[#220000] p-3 md:p-5 flex flex-wrap justify-center gap-2 md:gap-4 items-center border-t-4 md:border-t-8 border-[#ffcc00]">
-                <button onclick="changeBet(-10)" class="bg-green-600 text-white px-3 py-2 md:px-6 md:py-3 text-sm md:text-xl border-2 md:border-4 border-white shadow-[0_3px_0_#166534] md:shadow-[0_6px_0_#166534]">–10</button>
-                <div class="text-xl md:text-3xl font-bold">BET <span id="betAmount" class="text-green-400">20</span></div>
-                <button onclick="changeBet(10)" class="bg-green-600 text-white px-3 py-2 md:px-6 md:py-3 text-sm md:text-xl border-2 md:border-4 border-white shadow-[0_3px_0_#166534] md:shadow-[0_6px_0_#166534]">+10</button>
+            <div class="controls bg-[#220000] p-2 md:p-5 flex flex-wrap justify-center gap-1 md:gap-4 items-center border-t-2 md:border-t-8 border-[#ffcc00]">
+                <button onclick="changeBet(-10)" class="bg-green-600 text-white px-2 py-1 md:px-6 md:py-3 text-xs md:text-xl border-1 md:border-4 border-white shadow-[0_2px_0_#166534] md:shadow-[0_6px_0_#166534]">–10</button>
+                <div class="text-sm md:text-3xl font-bold">BET <span id="betAmount" class="text-green-400">20</span></div>
+                <button onclick="changeBet(10)" class="bg-green-600 text-white px-2 py-1 md:px-6 md:py-3 text-xs md:text-xl border-1 md:border-4 border-white shadow-[0_2px_0_#166534] md:shadow-[0_6px_0_#166534]">+10</button>
 
-                <button onclick="spin()" id="spinBtn" class="bg-red-600 text-white px-8 py-4 md:px-16 md:py-6 text-2xl md:text-4xl border-4 md:border-8 border-yellow-400 shadow-[0_5px_0_#991b1b] md:shadow-[0_10px_0_#991b1b] flex-1 max-w-xs">SPIN 🪙</button>
+                <button onclick="spin()" id="spinBtn" class="bg-red-600 text-white px-4 py-2 md:px-16 md:py-6 text-sm md:text-4xl border-2 md:border-8 border-yellow-400 shadow-[0_3px_0_#991b1b] md:shadow-[0_10px_0_#991b1b] flex-1 max-w-xs min-w-[80px]">SPIN 🪙</button>
 
-                <button onclick="toggleAuto()" id="autoBtn" class="bg-green-600 text-white px-4 py-3 md:px-8 md:py-6 text-sm md:text-2xl border-2 md:border-4 border-white">AUTO</button>
-                <button onclick="buyFeature()" class="bg-emerald-600 text-white px-4 py-3 md:px-8 md:py-6 text-sm md:text-2xl border-2 md:border-4 border-white">BUY BONUS</button>
+                <button onclick="toggleAuto()" id="autoBtn" class="bg-green-600 text-white px-3 py-2 md:px-8 md:py-6 text-xs md:text-2xl border-1 md:border-4 border-white">AUTO</button>
+                <button onclick="buyFeature()" class="bg-emerald-600 text-white px-3 py-2 md:px-8 md:py-6 text-xs md:text-2xl border-1 md:border-4 border-white">BONUS</button>
             </div>
 
             <div id="gameLog" class="log">Welcome to the park! Spin with PARK COINS. Big clusters = big wins!</div>
         </div>
 
         <!-- PROFILE SCREEN -->
-        <div id="profileScreen" class="screen p-6">
-            <h1 class="text-4xl text-center mb-6">YOUR TRAILER</h1>
-            <div class="bg-black p-8 rounded-xl border-8 border-[#ffcc00] text-center">
-                <div id="profileName" class="text-5xl mb-4">RedneckRandy</div>
-                <div class="text-7xl font-bold text-green-400 mb-8" id="profileCoins">1250 🪙</div>
-                <button onclick="claimDailyBonus()" class="bg-yellow-400 text-black px-12 py-6 text-2xl w-full mb-8">CLAIM DAILY BONUS (50 COINS)</button>
+        <div id="profileScreen" class="screen p-3 md:p-6">
+            <h1 class="text-2xl md:text-4xl text-center mb-4 md:mb-6">YOUR TRAILER</h1>
+            <div class="bg-black p-4 md:p-8 rounded-xl border-4 md:border-8 border-[#ffcc00] text-center">
+                <div id="profileName" class="text-2xl md:text-5xl mb-2 md:mb-4">RedneckRandy</div>
+                <div class="text-4xl md:text-7xl font-bold text-green-400 mb-4 md:mb-8" id="profileCoins">1250 🪙</div>
+                <button onclick="claimDailyBonus()" class="bg-yellow-400 text-black px-6 md:px-12 py-3 md:py-6 text-sm md:text-2xl w-full mb-4 md:mb-8">CLAIM DAILY BONUS</button>
 
-                <div class="text-left text-sm bg-gray-900 p-4 rounded mb-6">
-                    <h3 class="mb-3 text-yellow-400">LAST 5 SPINS</h3>
-                    <div id="historyList" class="space-y-3 text-green-300 font-mono text-xs"></div>
+                <div class="text-left text-xs md:text-sm bg-gray-900 p-2 md:p-4 rounded mb-4 md:mb-6">
+                    <h3 class="mb-2 md:mb-3 text-yellow-400">LAST 5 SPINS</h3>
+                    <div id="historyList" class="space-y-2 md:space-y-3 text-green-300 font-mono text-[10px] md:text-xs"></div>
                 </div>
 
-                <button onclick="logout()" class="text-red-400 text-xl underline">LOG OUT / SWITCH USER</button>
+                <button onclick="logout()" class="text-red-400 text-sm md:text-xl underline">LOG OUT</button>
             </div>
         </div>
 
         <!-- LEADERBOARD SCREEN -->
-        <div id="leaderboardScreen" class="screen p-6 overflow-auto">
-            <h1 class="text-4xl text-center mb-6">PARK LEGENDS</h1>
-            <div id="leaderboardList" class="space-y-4"></div>
+        <div id="leaderboardScreen" class="screen p-3 md:p-6 overflow-auto">
+            <h1 class="text-2xl md:text-4xl text-center mb-4 md:mb-6">PARK LEGENDS</h1>
+            <div id="leaderboardList" class="space-y-2 md:space-y-4"></div>
         </div>
 
         <!-- ADMIN PANEL -->
@@ -278,21 +318,21 @@ export async function GET() {
         </div>
 
         <!-- LOGIN / USER SELECT MODAL -->
-        <div id="loginModal" class="fixed inset-0 bg-black/95 flex items-center justify-center z-[9999]">
-            <div class="bg-[#111] border-8 border-[#ffcc00] p-8 max-w-md w-full mx-4 text-center modal">
-                <h1 class="text-5xl mb-8">SUNNFUN RESIDENTS CASINO #2</h1>
-                <p class="mb-6 text-xl">Pick your trailer or create a new one</p>
+        <div id="loginModal" class="fixed inset-0 bg-black/95 flex items-center justify-center z-[9999] p-2">
+            <div class="bg-[#111] border-4 md:border-8 border-[#ffcc00] p-4 md:p-8 max-w-md w-full mx-2 md:mx-4 text-center modal">
+                <h1 class="text-2xl md:text-5xl mb-4 md:mb-8">SUNNFUN RESIDENTS CASINO #2</h1>
+                <p class="mb-4 md:mb-6 text-sm md:text-xl">Pick your trailer or create a new one</p>
 
-                <div id="userSelectList" class="grid grid-cols-2 gap-4 mb-8"></div>
+                <div id="userSelectList" class="grid grid-cols-2 gap-2 md:gap-4 mb-4 md:mb-8"></div>
 
-                <div class="text-xs text-gray-400 mb-4">— OR —</div>
+                <div class="text-[10px] md:text-xs text-gray-400 mb-2 md:mb-4">— OR —</div>
 
                 <input id="newUsername" type="text" placeholder="NEW TRAILER NAME"
-                       class="w-full bg-black border-4 border-yellow-400 text-white px-6 py-5 text-2xl text-center mb-6 outline-none">
+                       class="w-full bg-black border-2 md:border-4 border-yellow-400 text-white px-4 md:px-6 py-3 md:py-5 text-sm md:text-2xl text-center mb-4 md:mb-6 outline-none">
 
-                <button onclick="createNewUser()" class="w-full bg-[#00ff00] text-black py-6 text-3xl border-4 border-white">START NEW TRAILER</button>
+                <button onclick="createNewUser()" class="w-full bg-[#00ff00] text-black py-3 md:py-6 text-lg md:text-3xl border-2 md:border-4 border-white">START NEW TRAILER</button>
 
-                <p class="text-[10px] mt-8 text-gray-500">Demo app • Data saved in browser • Perfect for Vercel static deploy</p>
+                <p class="text-[8px] md:text-[10px] mt-4 md:mt-8 text-gray-500">Demo app • Data saved in browser • Perfect for Vercel static deploy</p>
             </div>
         </div>
 
