@@ -33,16 +33,16 @@ export default function Lobby() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {/* Detective Game */}
           <Link href="/detective" className="group">
-            <div className="bg-gradient-to-br from-neutral-800 to-neutral-900 p-8 rounded-xl border border-neutral-700 hover:border-yellow-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105 cursor-pointer">
+            <div className="bg-gradient-to-br from-neutral-800 to-neutral-900 p-4 md:p-8 rounded-xl border border-neutral-700 hover:border-yellow-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105 cursor-pointer">
               <div className="text-center">
-                <div className="text-6xl mb-4">🕵️</div>
-                <h3 className="text-2xl font-bold text-yellow-400 mb-3 group-hover:text-yellow-300">
+                <div className="text-4xl md:text-6xl mb-2 md:mb-4">🕵️</div>
+                <h3 className="text-lg md:text-2xl font-bold text-yellow-400 mb-2 md:mb-3 group-hover:text-yellow-300">
                   Who&apos;d Snitch?
                 </h3>
-                <p className="text-neutral-300 mb-6">
-                  &ldquo;Someone snitched at the cookout! Find the rat and send &apos;em to the lake!&rdquo;
+                <p className="text-neutral-300 text-sm md:text-base mb-3 md:mb-6 line-clamp-2">
+                  &ldquo;Someone snitched at the cookout! Find the rat!&rdquo;
                 </p>
-                <div className="text-green-400 font-bold text-lg">
+                <div className="text-green-400 font-bold text-sm md:text-lg">
                   🟢 LIVE NOW
                 </div>
               </div>
@@ -51,16 +51,16 @@ export default function Lobby() {
 
           {/* Sun N Fun Slots */}
           <Link href="/slots" className="group">
-            <div className="bg-gradient-to-br from-neutral-800 to-neutral-900 p-8 rounded-xl border border-neutral-700 hover:border-yellow-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105 cursor-pointer">
+            <div className="bg-gradient-to-br from-neutral-800 to-neutral-900 p-4 md:p-8 rounded-xl border border-neutral-700 hover:border-yellow-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105 cursor-pointer">
               <div className="text-center">
-                <div className="text-6xl mb-4">🎰</div>
-                <h3 className="text-2xl font-bold text-yellow-400 mb-3 group-hover:text-yellow-300">
+                <div className="text-4xl md:text-6xl mb-2 md:mb-4">🎰</div>
+                <h3 className="text-lg md:text-2xl font-bold text-yellow-400 mb-2 md:mb-3 group-hover:text-yellow-300">
                   Sun N Fun Slots
                 </h3>
-                <p className="text-neutral-300 mb-6">
-                  &ldquo;Lakeside cookout chaos! Kick them pigs and watch the money fly!&rdquo;
+                <p className="text-neutral-300 text-sm md:text-base mb-3 md:mb-6 line-clamp-2">
+                  &ldquo;Lakeside chaos! Kick them pigs!&rdquo;
                 </p>
-                <div className="text-green-400 font-bold text-lg">
+                <div className="text-green-400 font-bold text-sm md:text-lg">
                   🟢 LIVE NOW
                 </div>
               </div>
@@ -69,16 +69,16 @@ export default function Lobby() {
 
           {/* White Jack Blackjack */}
           <Link href="/blackjack" className="group">
-            <div className="bg-gradient-to-br from-green-800 to-green-900 p-8 rounded-xl border border-green-700 hover:border-white/50 transition-all duration-300 group-hover:transform group-hover:scale-105 cursor-pointer">
+            <div className="bg-gradient-to-br from-green-800 to-green-900 p-4 md:p-8 rounded-xl border border-green-700 hover:border-white/50 transition-all duration-300 group-hover:transform group-hover:scale-105 cursor-pointer">
               <div className="text-center">
-                <div className="text-6xl mb-4">🃏</div>
-                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-gray-200">
+                <div className="text-4xl md:text-6xl mb-2 md:mb-4">🃏</div>
+                <h3 className="text-lg md:text-2xl font-bold text-white mb-2 md:mb-3 group-hover:text-gray-200">
                   White Jack
                 </h3>
-                <p className="text-green-100 mb-6">
-                  &ldquo;Lakeside elegance meets classic blackjack. Clean cards, cool stakes!&rdquo;
+                <p className="text-green-100 text-sm md:text-base mb-3 md:mb-6 line-clamp-2">
+                  &ldquo;Lakeside elegance, clean cards!&rdquo;
                 </p>
-                <div className="text-green-400 font-bold text-lg">
+                <div className="text-green-400 font-bold text-sm md:text-lg">
                   🟢 LIVE NOW
                 </div>
               </div>
@@ -87,16 +87,34 @@ export default function Lobby() {
 
           {/* Hiding in the Tree */}
           <Link href="/tree-hide" className="group">
-            <div className="bg-gradient-to-br from-amber-800 to-amber-900 p-8 rounded-xl border border-amber-700 hover:border-yellow-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105 cursor-pointer">
+            <div className="bg-gradient-to-br from-amber-800 to-amber-900 p-4 md:p-8 rounded-xl border border-amber-700 hover:border-yellow-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105 cursor-pointer">
               <div className="text-center">
-                <div className="text-6xl mb-4">🌳</div>
-                <h3 className="text-2xl font-bold text-yellow-400 mb-3 group-hover:text-yellow-300">
+                <div className="text-4xl md:text-6xl mb-2 md:mb-4">🌳</div>
+                <h3 className="text-lg md:text-2xl font-bold text-yellow-400 mb-2 md:mb-3 group-hover:text-yellow-300">
                   Hiding in the Tree
                 </h3>
-                <p className="text-amber-100 mb-6">
-                  &ldquo;Spot the critters hidin&apos; in this mighty oak! Find &apos;em before time runs out!&rdquo;
+                <p className="text-amber-100 text-sm md:text-base mb-3 md:mb-6 line-clamp-2">
+                  &ldquo;Spot critters in the oak tree!&rdquo;
                 </p>
-                <div className="text-green-400 font-bold text-lg">
+                <div className="text-green-400 font-bold text-sm md:text-lg">
+                  🟢 LIVE NOW
+                </div>
+              </div>
+            </div>
+          </Link>
+
+          {/* My Achy Breaky Axe */}
+          <Link href="/axe-throwing" className="group">
+            <div className="bg-gradient-to-br from-orange-800 to-orange-900 p-4 md:p-8 rounded-xl border border-orange-700 hover:border-yellow-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105 cursor-pointer">
+              <div className="text-center">
+                <div className="text-4xl md:text-6xl mb-2 md:mb-4">🪓</div>
+                <h3 className="text-lg md:text-2xl font-bold text-yellow-400 mb-2 md:mb-3 group-hover:text-yellow-300">
+                  Achy Breaky Axe
+                </h3>
+                <p className="text-orange-100 text-sm md:text-base mb-3 md:mb-6 line-clamp-2">
+                  &ldquo;Lumberjack axe throwing!&rdquo;
+                </p>
+                <div className="text-green-400 font-bold text-sm md:text-lg">
                   🟢 LIVE NOW
                 </div>
               </div>
