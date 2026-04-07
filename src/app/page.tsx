@@ -19,7 +19,7 @@ export default function Home() {
               SunNFun Slots
             </div>
             <p className="text-xl md:text-2xl text-neutral-300 max-w-3xl mx-auto">
-              Where the slots are hotter than a backwoods bonfire cook-off!
+              Where the slots are hotter than a trailer park barbecue blowout!
             </p>
           </div>
 
@@ -32,7 +32,7 @@ export default function Home() {
               🚪 Enter the Garage 🏠
             </Link>
             <p className="mt-4 text-neutral-400 italic">
-              &ldquo;Come on in, partner - the dealer&apos;s waitin&apos; with some jackpots!&rdquo;
+              &ldquo;Come on in, neighbor - the dealer&apos;s waitin&apos; with some jackpots!&rdquo;
             </p>
           </div>
 
@@ -42,8 +42,8 @@ export default function Home() {
               <div className="text-4xl mb-4">🎰</div>
               <h3 className="text-xl font-bold text-yellow-400 mb-3">High-Stakes Shenanigans</h3>
               <p className="text-neutral-300">
-                Spin &apos;em wild like you&apos;re dancin&apos; at the county fair!
-                Big payouts that&apos;ll make you holler louder than a backwoods hollerin&apos; contest.
+                Spin &apos;em wild like you&apos;re watchin&apos; soaps at the laundromat!
+                Big payouts that&apos;ll make you holler louder than a trailer park yard sale.
               </p>
             </div>
 
@@ -51,8 +51,8 @@ export default function Home() {
               <div className="text-4xl mb-4">🍺</div>
               <h3 className="text-xl font-bold text-yellow-400 mb-3">No Bull Cornbread</h3>
               <p className="text-neutral-300">
-                Honest-to-goodness fun without the baloney.
-                Straight shootin&apos; slots that&apos;ll treat you fair and square.
+                Honest-to-goodness fun without the drama.
+                Straight-up slots that&apos;ll treat you fair and square.
               </p>
             </div>
 
@@ -60,8 +60,8 @@ export default function Home() {
               <div className="text-4xl mb-4">🔥</div>
               <h3 className="text-xl font-bold text-yellow-400 mb-3">Red-Hot Jackpots</h3>
               <p className="text-neutral-300">
-                Hotter than a pepper in grandma&apos;s victory garden!
-                Life-changin&apos; wins that&apos;ll have you dancin&apos; like you&apos;re king of the county fair.
+                Hotter than a microwave burrito left out too long!
+                Life-changin&apos; wins that&apos;ll have you dancin&apos; like you&apos;re queen of the trailer park.
               </p>
             </div>
           </div>
