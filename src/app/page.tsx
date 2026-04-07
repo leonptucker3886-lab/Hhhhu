@@ -13,7 +13,7 @@ export default function Home() {
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 bg-clip-text text-transparent">
-              cookout
+              Company Cookout
             </h1>
             <div className="text-2xl md:text-4xl font-bold text-yellow-400 mb-4">
               SunNFun Slots

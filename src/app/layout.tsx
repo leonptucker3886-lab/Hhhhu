@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "cookout SunNFun Slots - Hillbilly Casino Fun",
+  title: "Company Cookout SunNFun Slots - Hillbilly Casino Fun",
   description: "Welcome to the pokey! High-stakes slots with more fun than a jailbreak party. Play now and spin your way to freedom!",
 };
 

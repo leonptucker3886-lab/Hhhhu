@@ -8,7 +8,7 @@ export default function Lobby() {
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
-              cookout
+              Company Cookout
             </span>
             <span className="text-yellow-400 font-semibold">SunNFun Slots</span>
           </Link>
@@ -149,7 +149,7 @@ export default function Lobby() {
           <p className="italic">
             &ldquo;Remember: Gamble responsibly... or don&apos;t. We&apos;re not your mama! 😉&rdquo;
           </p>
-          <p className="text-sm mt-2">© 2026 cookout SunNFun Slots - All rights reserved</p>
+          <p className="text-sm mt-2">© 2026 Company Cookout SunNFun Slots - All rights reserved</p>
         </footer>
       </div>
     </main>
