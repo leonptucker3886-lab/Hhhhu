@@ -8,8 +8,8 @@ const SYMBOLS = [
   { emoji: '🐷', name: 'Pig', value: 10, multiplier: 1.5 },
   { emoji: '🍺', name: 'Beer Money', value: 8, multiplier: 1.2 },
   { emoji: '🔨', name: 'Nails', value: 6, multiplier: 1.0 },
-  { emoji: '🎣', name: 'Fish', value: 4, multiplier: 0.8 },
-  { emoji: '🐊', name: 'Alligator', value: 2, multiplier: 0.5 },
+  { emoji: '🚓', name: 'Police Car', value: 4, multiplier: 0.8 },
+  { emoji: '💉', name: 'Needle', value: 2, multiplier: 0.5 },
   { emoji: '🥾', name: 'Wild Boot', value: 0, multiplier: 2.0, isWild: true },
   { emoji: '⭐', name: 'Free Spin Scatter', value: 0, multiplier: 0, isScatter: true }
 ];
