@@ -16,23 +16,31 @@ export default function Home() {
               Company Cookout
             </h1>
             <div className="text-2xl md:text-4xl font-bold text-yellow-400 mb-4">
-              SunNFun Slots
+              Complete Casino Experience
             </div>
             <p className="text-xl md:text-2xl text-neutral-300 max-w-3xl mx-auto">
-              Where the slots are hotter than a trailer park barbecue blowout!
+              10 fully playable games in our pondside casino - slots, blackjack, detective mysteries, and more!
             </p>
           </div>
 
-          {/* Main CTA */}
-          <div className="text-center mb-16">
-            <Link
-              href="/lobby"
-              className="inline-block bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold text-xl px-12 py-6 rounded-full transform hover:scale-105 transition-all duration-200 shadow-2xl"
-            >
-              🚪 Enter the Garage 🏠
-            </Link>
-            <p className="mt-4 text-neutral-400 italic">
-              &ldquo;Come on in, neighbor - the dealer&apos;s waitin&apos; with some jackpots!&rdquo;
+          {/* Main CTAs */}
+          <div className="text-center mb-16 space-y-6">
+            <div>
+              <Link
+                href="/lobby"
+                className="inline-block bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold text-xl px-12 py-6 rounded-full transform hover:scale-105 transition-all duration-200 shadow-2xl mr-4"
+              >
+                🚪 Enter the Garage 🏠
+              </Link>
+              <Link
+                href="/move-in"
+                className="inline-block bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-bold text-xl px-12 py-6 rounded-full transform hover:scale-105 transition-all duration-200 shadow-2xl"
+              >
+                🏚️ Move In 🏠
+              </Link>
+            </div>
+            <p className="text-neutral-400 italic">
+              &ldquo;Come on in, neighbor - the dealer&apos;s waitin&apos; with some jackpots, or join the trailer park social scene!&rdquo;
             </p>
           </div>
 
@@ -40,28 +48,25 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="bg-neutral-800/50 backdrop-blur-sm p-8 rounded-xl border border-neutral-700 text-center">
               <div className="text-4xl mb-4">🎰</div>
-              <h3 className="text-xl font-bold text-yellow-400 mb-3">High-Stakes Shenanigans</h3>
+              <h3 className="text-xl font-bold text-yellow-400 mb-3">Slot Machines</h3>
               <p className="text-neutral-300">
-                Spin &apos;em wild like you&apos;re watchin&apos; soaps at the laundromat!
-                Big payouts that&apos;ll make you holler louder than a trailer park yard sale.
+                Sun N Fun Slots with cookout themes, progressive jackpots, and bonus rounds!
               </p>
             </div>
 
             <div className="bg-neutral-800/50 backdrop-blur-sm p-8 rounded-xl border border-neutral-700 text-center">
-              <div className="text-4xl mb-4">🍺</div>
-              <h3 className="text-xl font-bold text-yellow-400 mb-3">No Bull Cornbread</h3>
+              <div className="text-4xl mb-4">🃏</div>
+              <h3 className="text-xl font-bold text-yellow-400 mb-3">Table Games</h3>
               <p className="text-neutral-300">
-                Honest-to-goodness fun without the drama.
-                Straight-up slots that&apos;ll treat you fair and square.
+                White Jack blackjack and other classic casino table games with pondside flair.
               </p>
             </div>
 
             <div className="bg-neutral-800/50 backdrop-blur-sm p-8 rounded-xl border border-neutral-700 text-center">
-              <div className="text-4xl mb-4">🔥</div>
-              <h3 className="text-xl font-bold text-yellow-400 mb-3">Red-Hot Jackpots</h3>
+              <div className="text-4xl mb-4">🕵️</div>
+              <h3 className="text-xl font-bold text-yellow-400 mb-3">Specialty Games</h3>
               <p className="text-neutral-300">
-                Hotter than a microwave burrito left out too long!
-                Life-changin&apos; wins that&apos;ll have you dancin&apos; like you&apos;re queen of the trailer park.
+                Detective mysteries, axe throwing, duck hunting, and unique casino experiences!
               </p>
             </div>
           </div>
