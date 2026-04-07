@@ -224,6 +224,39 @@ export default function DetectiveGame() {
                   </button>
                 ))}
               </div>
+
+              {/* Clues Display */}
+              {gameState.clues.length > 0 && (
+                <div className="mt-6 max-w-2xl mx-auto">
+                  <h4 className="text-lg font-bold text-yellow-400 mb-3">Your Clues:</h4>
+                  <div className="space-y-2">
+                    {gameState.clues.map((clue, index) => (
+                      <div key={index} className="bg-neutral-700 p-3 rounded-lg flex items-center">
+                        <span className="mr-3 text-yellow-400">🔍</span>
+                        <span className="text-neutral-200">{clue.text}</span>
+                        <span className="ml-auto text-xs text-neutral-400">
+                          (from {CHARACTERS.find(c => c.id === clue.character)?.name})
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Accusation Option */}
+              {gameState.interviewed.length >= 2 && (
+                <div className="mt-8">
+                  <button
+                    onClick={() => setGameState(prev => ({ ...prev, gamePhase: 'accusation' }))}
+                    className="px-8 py-4 bg-red-600 hover:bg-red-500 text-white font-bold rounded-lg transition-all transform hover:scale-105 shadow-lg animate-pulse"
+                  >
+                    🎯 Ready to Guess Who the Snitch Is?
+                  </button>
+                  <p className="mt-2 text-neutral-400 text-sm">
+                    You&apos;ve interviewed {gameState.interviewed.length} characters and gathered {gameState.clues.length} clues
+                  </p>
+                </div>
+              )}
             </div>
           )}
 
