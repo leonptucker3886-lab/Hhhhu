@@ -51,14 +51,14 @@ export default function TreeHideGame() {
   // Generate hidden items
   const generateItems = useCallback((): HiddenItem[] => {
     const possibleItems = [
-      { name: 'Squirrel', emoji: '🐿️', points: 100 },
-      { name: 'Bird', emoji: '🐦', points: 75 },
-      { name: 'Frog', emoji: '🐸', points: 60 },
-      { name: 'Butterfly', emoji: '🦋', points: 50 },
-      { name: 'Bee', emoji: '🐝', points: 40 },
-      { name: 'Spider', emoji: '🕷️', points: 80 },
-      { name: 'Ladybug', emoji: '🐞', points: 45 },
-      { name: 'Owl', emoji: '🦉', points: 90 }
+      { name: 'Suspicious Guy', emoji: '🕵️‍♂️', points: 100 },
+      { name: 'Hiding Lady', emoji: '👩‍🦱', points: 75 },
+      { name: 'Sneaky Kid', emoji: '👦', points: 60 },
+      { name: 'Mysterious Stranger', emoji: '🧑‍🦱', points: 50 },
+      { name: 'Crouching Figure', emoji: '🙇‍♂️', points: 40 },
+      { name: 'Tree Climber', emoji: '🧗‍♂️', points: 80 },
+      { name: 'Branch Hider', emoji: '🙋‍♀️', points: 45 },
+      { name: 'Canopy Dweller', emoji: '🧘‍♀️', points: 90 }
     ];
 
     return possibleItems.slice(0, gameState.totalItems).map((item, index) => ({
@@ -208,11 +208,11 @@ export default function TreeHideGame() {
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Game Title */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 bg-clip-text text-transparent">
-            Hiding in the Tree
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-green-400 via-green-300 to-green-500 bg-clip-text text-transparent">
+            Night Vision Peepin'
           </h1>
           <p className="text-xl text-green-100 max-w-2xl mx-auto">
-            &ldquo;Spot the critters hidin&apos; in this mighty oak! Find &apos;em all before time runs out!&rdquo;
+            &ldquo;Peep through the blinds with night vision goggles! Spot the people hidin&apos; in them trees!&rdquo;
           </p>
         </div>
 
@@ -308,20 +308,41 @@ export default function TreeHideGame() {
               </div>
             </div>
 
-            {/* Tree Game Area */}
+            {/* Night Vision Game Area */}
             <div
               ref={gameAreaRef}
-              className="relative bg-gradient-to-b from-green-600 to-green-800 rounded-xl h-96 overflow-hidden shadow-2xl border-4 border-green-500"
+              className="relative bg-gradient-to-b from-green-900 to-black rounded-xl h-96 overflow-hidden shadow-2xl border-4 border-green-400"
               style={{
-                backgroundImage: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23006600" fill-opacity="0.1"%3E%3Ccircle cx="30" cy="30" r="4"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
-                backgroundSize: '30px 30px'
+                backgroundImage: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23002200" fill-opacity="0.3"%3E%3Crect x="0" y="0" width="60" height="60" fill="none" stroke="%2300ff00" stroke-width="1" opacity="0.2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
+                backgroundSize: '40px 40px'
               }}
             >
-              {/* Tree Trunk */}
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-32 bg-amber-800 rounded-t-lg shadow-lg"></div>
+              {/* Night Vision Effect */}
+              <div className="absolute inset-0 bg-green-400 opacity-10 animate-pulse"></div>
 
-              {/* Tree Leaves/Canopy */}
-              <div className="absolute bottom-32 left-1/2 transform -translate-x-1/2 w-64 h-48 bg-green-700 rounded-full shadow-lg"></div>
+              {/* Blinds/Venetian Blinds */}
+              <div className="absolute top-0 left-0 right-0 h-16 bg-amber-900 opacity-90">
+                <div className="flex justify-center items-center h-full space-x-2">
+                  {Array.from({ length: 12 }, (_, i) => (
+                    <div key={i} className="w-8 h-1 bg-amber-700 rounded"></div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Night Vision Goggles HUD */}
+              <div className="absolute top-4 left-4 right-4 flex justify-between text-green-400 font-mono text-sm">
+                <div>NIGHT VISION: ACTIVE</div>
+                <div>THERMAL: ENGAGED</div>
+              </div>
+
+              {/* Trees in the distance */}
+              <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-green-900 to-transparent">
+                {/* Multiple trees */}
+                <div className="absolute bottom-0 left-10 w-12 h-24 bg-green-800 rounded-t-lg"></div>
+                <div className="absolute bottom-0 left-1/4 w-16 h-32 bg-green-800 rounded-t-lg"></div>
+                <div className="absolute bottom-0 right-1/4 w-14 h-28 bg-green-800 rounded-t-lg"></div>
+                <div className="absolute bottom-0 right-10 w-10 h-20 bg-green-800 rounded-t-lg"></div>
+              </div>
 
               {/* Hidden Items */}
               {gameState.items.map(item => (
@@ -416,23 +437,23 @@ export default function TreeHideGame() {
 
         {/* How to Play */}
         <div className="mt-12 bg-green-700/50 backdrop-blur-sm rounded-xl p-6 max-w-4xl mx-auto">
-          <h3 className="text-xl font-bold text-yellow-400 mb-4 text-center">How to Play: Hiding in the Tree</h3>
+          <h3 className="text-xl font-bold text-yellow-400 mb-4 text-center">How to Play: Night Vision Peepin'</h3>
           <div className="grid md:grid-cols-2 gap-6 text-sm text-green-100">
             <div>
               <h4 className="font-bold text-white mb-2">🎯 Objective</h4>
-              <p>Find all the hidden critters in the tree before time runs out! Each animal gives different points.</p>
+              <p>Spot all the hidden people in the trees before time runs out! Each person gives different points.</p>
             </div>
             <div>
               <h4 className="font-bold text-white mb-2">⏱️ Time Pressure</h4>
-              <p>You have 30 seconds to spot as many critters as possible. The timer counts down!</p>
+              <p>You have 30 seconds to spot as many people as possible through your night vision goggles!</p>
             </div>
             <div>
               <h4 className="font-bold text-white mb-2">💰 Winnings</h4>
               <p>80% found = 3x bet | 60% = 2x | 40% = 1.5x | 20% = break even</p>
             </div>
             <div>
-              <h4 className="font-bold text-white mb-2">🐿️ Critters</h4>
-              <p>Squirrel (100pts), Bird (75pts), Frog (60pts), Butterfly (50pts), Bee (40pts), Spider (80pts), Ladybug (45pts), Owl (90pts)</p>
+              <h4 className="font-bold text-white mb-2">🕵️‍♂️ People</h4>
+              <p>Suspicious Guy (100pts), Hiding Lady (75pts), Sneaky Kid (60pts), Mysterious Stranger (50pts), Crouching Figure (40pts), Tree Climber (80pts), Branch Hider (45pts), Canopy Dweller (90pts)</p>
             </div>
           </div>
         </div>

@@ -127,7 +127,7 @@ export default function AxeThrowingGame() {
         const airResistance = 0.98;
         const newVelocityX = axe.velocityX * airResistance;
         const newY = axe.y + newVelocityY;
-        const newX = axe.x + axe.velocityX;
+        const newX = axe.x + newVelocityX;
 
         // Apply rotation
         const newRotation = axe.rotation + axe.angularVelocity;

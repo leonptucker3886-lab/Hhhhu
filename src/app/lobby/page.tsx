@@ -91,10 +91,10 @@ export default function Lobby() {
               <div className="text-center">
                 <div className="text-4xl md:text-6xl mb-2 md:mb-4">🌳</div>
                 <h3 className="text-lg md:text-2xl font-bold text-yellow-400 mb-2 md:mb-3 group-hover:text-yellow-300">
-                  Hiding in the Tree
+                  Night Vision Peepin'
                 </h3>
                 <p className="text-amber-100 text-sm md:text-base mb-3 md:mb-6 line-clamp-2">
-                  &ldquo;Spot critters in the oak tree!&rdquo;
+                  &ldquo;Night vision through blinds!&rdquo;
                 </p>
                 <div className="text-green-400 font-bold text-sm md:text-lg">
                   🟢 LIVE NOW
