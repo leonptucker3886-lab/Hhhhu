@@ -10,14 +10,11 @@ export default function Lobby() {
             <span className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
               Company Cookout
             </span>
-            <span className="text-yellow-400 font-semibold">SunNFun Slots</span>
+            <span className="text-yellow-400 font-semibold">Gaming</span>
           </Link>
-          <Link
-            href="/"
-            className="text-neutral-400 hover:text-yellow-400 transition-colors"
-          >
-            ← Back to Front Porch
-          </Link>
+          <div className="text-neutral-400">
+            Welcome back, neighbor!
+          </div>
         </div>
       </header>
 
@@ -28,13 +25,31 @@ export default function Lobby() {
             The Company Garage
           </h1>
           <p className="text-xl text-neutral-300 max-w-2xl mx-auto">
-            &ldquo;Welcome to the garage, neighbor! Choose your spot and start spinnin&apos;!&rdquo;
+            &ldquo;Welcome to the garage, neighbor! Choose your ride and start spinnin&apos;!&rdquo;
           </p>
         </div>
 
         {/* Game Selection Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {/* Game 1 */}
+          {/* Detective Game */}
+          <Link href="/detective" className="group">
+            <div className="bg-gradient-to-br from-neutral-800 to-neutral-900 p-8 rounded-xl border border-neutral-700 hover:border-yellow-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105 cursor-pointer">
+              <div className="text-center">
+                <div className="text-6xl mb-4">🕵️</div>
+                <h3 className="text-2xl font-bold text-yellow-400 mb-3 group-hover:text-yellow-300">
+                  Detective Mystery
+                </h3>
+                <p className="text-neutral-300 mb-6">
+                  &ldquo;Someone snitched at the cookout! Find the rat and send &apos;em to the lake!&rdquo;
+                </p>
+                <div className="text-green-400 font-bold text-lg">
+                  🟢 LIVE NOW
+                </div>
+              </div>
+            </div>
+          </Link>
+
+          {/* Trailer Park Slots */}
           <div className="bg-gradient-to-br from-neutral-800 to-neutral-900 p-8 rounded-xl border border-neutral-700 hover:border-yellow-500/50 transition-all duration-300 group cursor-pointer">
             <div className="text-center">
               <div className="text-6xl mb-4">🎰</div>
@@ -42,15 +57,15 @@ export default function Lobby() {
                 Trailer Park Slots
               </h3>
               <p className="text-neutral-300 mb-6">
-                &ldquo;Kick back with a cold one and spin those reels! Three wheels of pure trailer park fun that&apos;ll have you whoopin&apos; and hollerin&apos;... for more!&rdquo;
+                &ldquo;Spin those reels like you&apos;re watchin&apos; soaps at the laundromat! Big payouts await!&rdquo;
               </p>
               <button className="w-full bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-colors">
-                Play Now (Coming Soon)
+                Coming Soon
               </button>
             </div>
           </div>
 
-          {/* Game 2 */}
+          {/* Moonshine Poker */}
           <div className="bg-gradient-to-br from-neutral-800 to-neutral-900 p-8 rounded-xl border border-neutral-700 hover:border-yellow-500/50 transition-all duration-300 group cursor-pointer">
             <div className="text-center">
               <div className="text-6xl mb-4">🃏</div>
@@ -58,15 +73,15 @@ export default function Lobby() {
                 Moonshine Poker
               </h3>
               <p className="text-neutral-300 mb-6">
-                &ldquo;Get dealt a hand hotter than homemade hooch! Five-card draw that&apos;ll test your poker face faster than a lie detector test.&rdquo;
+                &ldquo;Get dealt a hand hotter than homemade moonshine! Five-card action with lake vibes!&rdquo;
               </p>
               <button className="w-full bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-colors">
-                Play Now (Coming Soon)
+                Coming Soon
               </button>
             </div>
           </div>
 
-          {/* Game 3 */}
+          {/* Cornbread Craps */}
           <div className="bg-gradient-to-br from-neutral-800 to-neutral-900 p-8 rounded-xl border border-neutral-700 hover:border-yellow-500/50 transition-all duration-300 group cursor-pointer">
             <div className="text-center">
               <div className="text-6xl mb-4">🎲</div>
@@ -74,15 +89,15 @@ export default function Lobby() {
                 Cornbread Craps
               </h3>
               <p className="text-neutral-300 mb-6">
-                &ldquo;Roll them bones like you&apos;re shakin&apos; the dice at a backyard barbecue! Come seven or come eleven, the fun never ends!&rdquo;
+                &ldquo;Roll them bones like you&apos;re shakin&apos; the dice at a backyard barbecue!&rdquo;
               </p>
               <button className="w-full bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-colors">
-                Play Now (Coming Soon)
+                Coming Soon
               </button>
             </div>
           </div>
 
-          {/* Game 4 */}
+          {/* Laundromat Plinko */}
           <div className="bg-gradient-to-br from-neutral-800 to-neutral-900 p-8 rounded-xl border border-neutral-700 hover:border-yellow-500/50 transition-all duration-300 group cursor-pointer">
             <div className="text-center">
               <div className="text-6xl mb-4">🎯</div>
@@ -90,15 +105,15 @@ export default function Lobby() {
                 Laundromat Plinko
               </h3>
               <p className="text-neutral-300 mb-6">
-                &ldquo;Drop that chip and watch it bounce! More exciting than bingo night and twice as unpredictable!&rdquo;
+                &ldquo;Drop that chip and watch it bounce! More exciting than bingo night!&rdquo;
               </p>
               <button className="w-full bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-colors">
-                Play Now (Coming Soon)
+                Coming Soon
               </button>
             </div>
           </div>
 
-          {/* Game 5 */}
+          {/* Satellite Dish Roulette */}
           <div className="bg-gradient-to-br from-neutral-800 to-neutral-900 p-8 rounded-xl border border-neutral-700 hover:border-yellow-500/50 transition-all duration-300 group cursor-pointer">
             <div className="text-center">
               <div className="text-6xl mb-4">🪙</div>
@@ -106,26 +121,10 @@ export default function Lobby() {
                 Satellite Dish Roulette
               </h3>
               <p className="text-neutral-300 mb-6">
-                &ldquo;Spin that wheel faster than channel surfin&apos;! Red or black, the house always wins... or does it?&rdquo;
+                &ldquo;Spin that wheel faster than channel surfin&apos;! Red or black, fortune favors the bold!&rdquo;
               </p>
               <button className="w-full bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-colors">
-                Play Now (Coming Soon)
-              </button>
-            </div>
-          </div>
-
-          {/* Game 6 */}
-          <div className="bg-gradient-to-br from-neutral-800 to-neutral-900 p-8 rounded-xl border border-neutral-700 hover:border-yellow-500/50 transition-all duration-300 group cursor-pointer">
-            <div className="text-center">
-              <div className="text-6xl mb-4">💰</div>
-              <h3 className="text-2xl font-bold text-yellow-400 mb-3 group-hover:text-yellow-300">
-                Gold Mine Jackpot
-              </h3>
-              <p className="text-neutral-300 mb-6">
-                &ldquo;The ultimate jackpot game! Win big enough and you might just strike gold... or at least a fancy new satellite dish!&rdquo;
-              </p>
-              <button className="w-full bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-colors">
-                Play Now (Coming Soon)
+                Coming Soon
               </button>
             </div>
           </div>
@@ -134,7 +133,7 @@ export default function Lobby() {
         {/* Coming Soon Message */}
         <div className="text-center bg-neutral-800/50 backdrop-blur-sm p-8 rounded-xl border border-neutral-700 max-w-2xl mx-auto">
           <h2 className="text-2xl font-bold text-yellow-400 mb-4">
-            Hold Your Horses, Partner!
+            Cookin&apos; Up More Fun!
           </h2>
           <p className="text-neutral-300 mb-4">
             &ldquo;We&apos;re cookin&apos; up somethin&apos; special in the kitchen. These games are comin&apos; faster than a soap opera plot twist!&rdquo;
@@ -149,7 +148,7 @@ export default function Lobby() {
           <p className="italic">
             &ldquo;Remember: Gamble responsibly... or don&apos;t. We&apos;re not your mama! 😉&rdquo;
           </p>
-          <p className="text-sm mt-2">© 2026 Company Cookout SunNFun Slots - All rights reserved</p>
+          <p className="text-sm mt-2">© 2026 Company Cookout Gaming - All rights reserved</p>
         </footer>
       </div>
     </main>

@@ -1,0 +1,188 @@
+/* Company Cookout Gaming - Visual Style Guide */
+
+/* ===== COLOR PALETTE ===== */
+/* Primary Backgrounds */
+--ccg-bg-primary: #171717;        /* Deep charcoal */
+--ccg-bg-secondary: #262626;      /* Dark gray */
+--ccg-bg-tertiary: #404040;       /* Medium gray */
+--ccg-bg-accent: #525252;         /* Light gray accents */
+
+/* Text Colors */
+--ccg-text-primary: #ffffff;      /* Pure white */
+--ccg-text-secondary: #d4d4d8;    /* Light gray text */
+--ccg-text-muted: #a1a1aa;        /* Muted text */
+--ccg-text-accent: #fbbf24;       /* Warm yellow */
+
+/* Accent Colors - Lakeside Cookout Theme */
+--ccg-accent-primary: #fbbf24;    /* Golden yellow (firefly glow) */
+--ccg-accent-secondary: #f59e0b;  /* Orange (campfire) */
+--ccg-accent-tertiary: #d97706;   /* Darker orange */
+--ccg-accent-earth: #92400e;      /* Muddy brown */
+--ccg-accent-forest: #166534;     /* Deep forest green */
+--ccg-accent-water: #1e40af;      /* Lake blue */
+
+/* Interactive States */
+--ccg-hover-primary: #fcd34d;     /* Lighter yellow hover */
+--ccg-active-primary: #f59e0b;    /* Orange active state */
+--ccg-disabled: #6b7280;          /* Gray disabled state */
+
+/* Borders and Shadows */
+--ccg-border-primary: #404040;    /* Medium gray borders */
+--ccg-border-accent: #fbbf24;     /* Yellow accent borders */
+--ccg-shadow-primary: rgba(0, 0, 0, 0.3);
+--ccg-shadow-glow: rgba(251, 191, 36, 0.3);
+
+/* ===== TYPOGRAPHY ===== */
+/* Font Families */
+--ccg-font-primary: 'Inter', 'Segoe UI', system-ui, sans-serif;  /* Modern, clean */
+--ccg-font-heading: 'Inter', 'Segoe UI', system-ui, sans-serif;  /* Same as primary for consistency */
+--ccg-font-accent: 'Georgia', 'Times New Roman', serif;          /* For special text */
+
+/* Font Sizes */
+--ccg-text-xs: 0.75rem;    /* 12px */
+--ccg-text-sm: 0.875rem;   /* 14px */
+--ccg-text-base: 1rem;     /* 16px */
+--ccg-text-lg: 1.125rem;   /* 18px */
+--ccg-text-xl: 1.25rem;    /* 20px */
+--ccg-text-2xl: 1.5rem;    /* 24px */
+--ccg-text-3xl: 1.875rem;  /* 30px */
+--ccg-text-4xl: 2.25rem;   /* 36px */
+--ccg-text-5xl: 3rem;      /* 48px */
+--ccg-text-6xl: 3.75rem;   /* 60px */
+
+/* Font Weights */
+--ccg-font-light: 300;
+--ccg-font-normal: 400;
+--ccg-font-medium: 500;
+--ccg-font-semibold: 600;
+--ccg-font-bold: 700;
+--ccg-font-extrabold: 800;
+
+/* ===== COMPONENT STYLES ===== */
+
+/* Button Styles */
+--ccg-btn-primary: {
+  background: linear-gradient(135deg, var(--ccg-accent-primary), var(--ccg-accent-secondary));
+  color: var(--ccg-bg-primary);
+  border: 2px solid var(--ccg-accent-primary);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: var(--ccg-font-bold);
+  font-size: var(--ccg-text-base);
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px var(--ccg-shadow-primary);
+}
+
+--ccg-btn-primary-hover: {
+  background: linear-gradient(135deg, var(--ccg-accent-secondary), var(--ccg-accent-tertiary));
+  transform: translateY(-1px);
+  box-shadow: 0 6px 8px var(--ccg-shadow-primary), 0 0 15px var(--ccg-shadow-glow);
+}
+
+--ccg-btn-primary-active: {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px var(--ccg-shadow-primary);
+}
+
+/* Card Styles */
+--ccg-card-base: {
+  background: linear-gradient(135deg, var(--ccg-bg-secondary), var(--ccg-bg-tertiary));
+  border: 1px solid var(--ccg-border-primary);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px var(--ccg-shadow-primary);
+}
+
+--ccg-card-hover: {
+  border-color: var(--ccg-accent-primary);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px var(--ccg-shadow-primary), 0 0 20px var(--ccg-shadow-glow);
+}
+
+/* Game Selection Cards */
+--ccg-game-card: {
+  background: linear-gradient(135deg, var(--ccg-bg-secondary) 0%, var(--ccg-bg-primary) 100%);
+  border: 2px solid var(--ccg-border-primary);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+--ccg-game-card-hover: {
+  border-color: var(--ccg-accent-primary);
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px var(--ccg-shadow-primary), 0 0 25px var(--ccg-shadow-glow);
+}
+
+/* ===== BACKGROUND PATTERNS ===== */
+/* Subtle lake ripple pattern */
+--ccg-bg-lake: {
+  background-image: radial-gradient(circle at 50% 50%, rgba(30, 64, 175, 0.05) 0%, transparent 50%);
+  background-size: 100px 100px;
+}
+
+/* Wood grain texture */
+--ccg-bg-wood: {
+  background-image: linear-gradient(45deg, rgba(146, 64, 14, 0.1) 25%, transparent 25%),
+                    linear-gradient(-45deg, rgba(146, 64, 14, 0.1) 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, rgba(146, 64, 14, 0.1) 75%),
+                    linear-gradient(-45deg, transparent 75%, rgba(146, 64, 14, 0.1) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+/* ===== ICON STYLE GUIDE ===== */
+/* Replace emojis with premium SVG alternatives where possible */
+/* 🎰 Slots -> Custom slot machine SVG */
+/* 🃏 Poker -> Custom card deck SVG */
+/* 🎲 Dice -> Custom dice SVG */
+/* 🎯 Plinko -> Custom pegboard SVG */
+/* 🪙 Roulette -> Custom wheel SVG */
+/* 🕵️ Detective -> Custom magnifying glass SVG */
+
+/* For remaining emojis, use larger sizes and add subtle glow effects */
+/* Add drop-shadow: 0 0 8px var(--ccg-shadow-glow); for premium feel */
+
+/* ===== ANIMATION GUIDE ===== */
+/* Hover lift effect */
+--ccg-animation-lift: {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+--ccg-animation-lift-hover: {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px var(--ccg-shadow-primary);
+}
+
+/* Glow pulse for important elements */
+--ccg-animation-glow: {
+  animation: ccg-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes ccg-glow {
+  from {
+    box-shadow: 0 0 10px var(--ccg-shadow-glow);
+  }
+  to {
+    box-shadow: 0 0 20px var(--ccg-shadow-glow), 0 0 30px var(--ccg-shadow-glow);
+  }
+}
+
+/* Particle explosion for wins */
+--ccg-animation-explode: {
+  animation: ccg-explode 0.6s ease-out;
+}
+
+@keyframes ccg-explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
