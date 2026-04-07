@@ -26,24 +26,48 @@ export default function Home() {
           {/* Main CTAs */}
           <div className="text-center mb-16 space-y-8">
             <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-              <div className="text-center">
+              <div className="text-center max-w-sm">
                 <Link
                   href="/lobby"
-                  className="inline-block bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold text-xl px-16 py-8 rounded-full transform hover:scale-105 transition-all duration-200 shadow-2xl"
+                  className="inline-block bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold text-xl px-12 py-6 rounded-full transform hover:scale-105 transition-all duration-200 shadow-2xl"
                 >
                   🚪 Garage Casino #1 🏠
                 </Link>
-                <p className="mt-3 text-yellow-300 text-sm">10 Classic Casino Games</p>
+                <p className="mt-3 text-yellow-300 text-sm font-semibold">10 Classic Casino Games</p>
+                <div className="mt-4 text-left bg-yellow-900/20 rounded-lg p-4 text-xs text-yellow-200 space-y-1">
+                  <div>🎰 Sun N Fun Slots</div>
+                  <div>🃏 White Jack Blackjack</div>
+                  <div>🕵️ Who's the Snitch?</div>
+                  <div>🌳 Hiding in the Trees</div>
+                  <div>🪓 Achy Breaky Axe</div>
+                  <div>🦆 Task Force: Duck N Cover</div>
+                  <div>🎱 Firewood Balls</div>
+                  <div>🐕 Show me your Pitties</div>
+                  <div>🍹 Drinking Again</div>
+                  <div>🌳 Night Vision Peepin'</div>
+                </div>
               </div>
 
-              <div className="text-center">
+              <div className="text-center max-w-sm">
                 <Link
                   href="/move-in"
-                  className="inline-block bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-bold text-xl px-16 py-8 rounded-full transform hover:scale-105 transition-all duration-200 shadow-2xl"
+                  className="inline-block bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-bold text-xl px-12 py-6 rounded-full transform hover:scale-105 transition-all duration-200 shadow-2xl"
                 >
                   🏚️ SunNFun Residents Casino #2 🏠
                 </Link>
-                <p className="mt-3 text-purple-300 text-sm">Social Slot Machine Experience</p>
+                <p className="mt-3 text-purple-300 text-sm font-semibold">Social Slot Machine Experience</p>
+                <div className="mt-4 text-left bg-purple-900/20 rounded-lg p-4 text-xs text-purple-200 space-y-1">
+                  <div>🎰 6x5 Cluster Slots</div>
+                  <div>💰 PARK COINS Economy</div>
+                  <div>👤 User Profiles & History</div>
+                  <div>🏆 Leaderboards & Rankings</div>
+                  <div>⚙️ Admin Panel</div>
+                  <div>🎁 Daily Bonuses</div>
+                  <div>📱 Mobile PWA</div>
+                  <div>🔄 Auto-Spin Feature</div>
+                  <div>🎊 Free Spins Bonuses</div>
+                  <div>💾 Local Data Storage</div>
+                </div>
               </div>
             </div>
             <div className="space-y-4">
