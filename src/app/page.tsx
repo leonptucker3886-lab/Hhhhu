@@ -13,7 +13,7 @@ export default function Home() {
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 bg-clip-text text-transparent">
-              Company Cookout
+              Garage Casino #1
             </h1>
             <div className="text-2xl md:text-4xl font-bold text-yellow-400 mb-4">
               Complete Casino Experience
@@ -24,24 +24,37 @@ export default function Home() {
           </div>
 
           {/* Main CTAs */}
-          <div className="text-center mb-16 space-y-6">
-            <div>
-              <Link
-                href="/lobby"
-                className="inline-block bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold text-xl px-12 py-6 rounded-full transform hover:scale-105 transition-all duration-200 shadow-2xl mr-4"
-              >
-                🚪 Enter the Garage 🏠
-              </Link>
-              <Link
-                href="/move-in"
-                className="inline-block bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-bold text-xl px-12 py-6 rounded-full transform hover:scale-105 transition-all duration-200 shadow-2xl"
-              >
-                🏚️ Move In 🏠
-              </Link>
+          <div className="text-center mb-16 space-y-8">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+              <div className="text-center">
+                <Link
+                  href="/lobby"
+                  className="inline-block bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold text-xl px-16 py-8 rounded-full transform hover:scale-105 transition-all duration-200 shadow-2xl"
+                >
+                  🚪 Garage Casino #1 🏠
+                </Link>
+                <p className="mt-3 text-yellow-300 text-sm">10 Classic Casino Games</p>
+              </div>
+
+              <div className="text-center">
+                <Link
+                  href="/move-in"
+                  className="inline-block bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-bold text-xl px-16 py-8 rounded-full transform hover:scale-105 transition-all duration-200 shadow-2xl"
+                >
+                  🏚️ SunNFun Residents Casino #2 🏠
+                </Link>
+                <p className="mt-3 text-purple-300 text-sm">Social Slot Machine Experience</p>
+              </div>
             </div>
-            <p className="text-neutral-400 italic">
-              &ldquo;Come on in, neighbor - the dealer&apos;s waitin&apos; with some jackpots, or join the trailer park social scene!&rdquo;
-            </p>
+            <div className="space-y-4">
+              <p className="text-neutral-400 italic text-lg">
+                &ldquo;Choose your casino adventure!&rdquo;
+              </p>
+              <div className="text-sm text-neutral-500 space-y-1">
+                <p>🟡 <strong>Garage Casino #1:</strong> Traditional casino with pondside charm</p>
+                <p>🟣 <strong>SunNFun Residents Casino #2:</strong> Social gaming with trailer park vibes</p>
+              </div>
+            </div>
           </div>
 
           {/* Features Grid */}

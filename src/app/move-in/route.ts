@@ -8,7 +8,7 @@ export async function GET() {
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#ff6600">
-    <title>TRAILER PARK SOCIAL • Play for PARK COINS</title>
+    <title>SUNNFUN RESIDENTS CASINO #2 • Play for PARK COINS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
@@ -158,7 +158,7 @@ export async function GET() {
     <div class="app">
         <!-- NAVBAR -->
         <div class="nav">
-            <div onclick="navigateTo('game')" class="title cursor-pointer">TRAILER PARK SOCIAL</div>
+            <div onclick="navigateTo('game')" class="title cursor-pointer">SUNNFUN RESIDENTS CASINO #2</div>
 
             <div class="flex items-center gap-6 text-sm">
                 <div onclick="navigateTo('game')" class="flex flex-col items-center cursor-pointer hover:text-white">
@@ -236,7 +236,7 @@ export async function GET() {
         <!-- LOGIN / USER SELECT MODAL -->
         <div id="loginModal" class="fixed inset-0 bg-black/95 flex items-center justify-center z-[9999]">
             <div class="bg-[#111] border-8 border-[#ffcc00] p-8 max-w-md w-full mx-4 text-center modal">
-                <h1 class="text-5xl mb-8">TRAILER PARK SOCIAL</h1>
+                <h1 class="text-5xl mb-8">SUNNFUN RESIDENTS CASINO #2</h1>
                 <p class="mb-6 text-xl">Pick your trailer or create a new one</p>
 
                 <div id="userSelectList" class="grid grid-cols-2 gap-4 mb-8"></div>
@@ -767,13 +767,13 @@ export async function GET() {
 
             document.getElementById('betAmount').textContent = currentBet;
 
-            log("🚚 TRAILER PARK SOCIAL LOADED – Vercel-ready PWA!");
+            log("🚚 SUNNFUN RESIDENTS CASINO #2 LOADED – Vercel-ready PWA!");
             log("Pick a user or create new. Admin password not needed – one user is admin by default.");
 
             // Show login on start
             setTimeout(showLogin, 300);
 
-            console.log('%c✅ COMPLETE SOCIAL CASINO WEB APP READY FOR VERCEL', 'color:#ffcc00;font-size:18px');
+            console.log('%c✅ SUNNFUN RESIDENTS CASINO #2 READY FOR VERCEL', 'color:#ffcc00;font-size:18px');
         }
 
         // Keyboard support
