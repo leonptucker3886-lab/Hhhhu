@@ -19,7 +19,7 @@ export default function Home() {
               SunNFun Slots
             </div>
             <p className="text-xl md:text-2xl text-neutral-300 max-w-3xl mx-auto">
-              Where the slots are hotter than a prison cafeteria chili cook-off!
+              Where the slots are hotter than a backwoods bonfire cook-off!
             </p>
           </div>
 
@@ -29,10 +29,10 @@ export default function Home() {
               href="/lobby"
               className="inline-block bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold text-xl px-12 py-6 rounded-full transform hover:scale-105 transition-all duration-200 shadow-2xl"
             >
-              🚪 Enter the Big House 🏠
+              🚪 Enter the Garage 🏠
             </Link>
             <p className="mt-4 text-neutral-400 italic">
-              &ldquo;Come on in, partner - the warden&apos;s waitin&apos; with some jackpots!&rdquo;
+              &ldquo;Come on in, partner - the dealer&apos;s waitin&apos; with some jackpots!&rdquo;
             </p>
           </div>
 
@@ -42,8 +42,8 @@ export default function Home() {
               <div className="text-4xl mb-4">🎰</div>
               <h3 className="text-xl font-bold text-yellow-400 mb-3">High-Stakes Shenanigans</h3>
               <p className="text-neutral-300">
-                Spin &apos;em wild like you&apos;re breakin&apos; rocks in the hot sun!
-                Big payouts that&apos;ll make you holler louder than a jailbreak siren.
+                Spin &apos;em wild like you&apos;re dancin&apos; at the county fair!
+                Big payouts that&apos;ll make you holler louder than a backwoods hollerin&apos; contest.
               </p>
             </div>
 
@@ -60,8 +60,8 @@ export default function Home() {
               <div className="text-4xl mb-4">🔥</div>
               <h3 className="text-xl font-bold text-yellow-400 mb-3">Red-Hot Jackpots</h3>
               <p className="text-neutral-300">
-                Hotter than a pepper in the prison garden!
-                Life-changin&apos; wins that&apos;ll have you dancin&apos; like you&apos;re free at last.
+                Hotter than a pepper in grandma&apos;s victory garden!
+                Life-changin&apos; wins that&apos;ll have you dancin&apos; like you&apos;re king of the county fair.
               </p>
             </div>
           </div>

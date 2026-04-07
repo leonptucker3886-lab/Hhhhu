@@ -25,10 +25,10 @@ export default function Lobby() {
         {/* Lobby Title */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 bg-clip-text text-transparent">
-            The Big House Lobby
+            The Company Garage
           </h1>
           <p className="text-xl text-neutral-300 max-w-2xl mx-auto">
-            &ldquo;Welcome to the pokey, partner! Choose your cell block and start spinnin&apos;!&rdquo;
+            &ldquo;Welcome to the garage, partner! Choose your ride and start spinnin&apos;!&rdquo;
           </p>
         </div>
 
@@ -39,10 +39,10 @@ export default function Lobby() {
             <div className="text-center">
               <div className="text-6xl mb-4">🎰</div>
               <h3 className="text-2xl font-bold text-yellow-400 mb-3 group-hover:text-yellow-300">
-                Chain Gang Slots
+                Hillbilly Slots
               </h3>
               <p className="text-neutral-300 mb-6">
-                &ldquo;Break free from the shackles of boredom! Three reels of pure hillbilly havoc that&apos;ll have you singin&apos; the blues... or greens!&rdquo;
+                &ldquo;Kick up your heels and spin those reels! Three wheels of pure hillbilly fun that&apos;ll have you whoopin&apos; and hollerin&apos;... for more!&rdquo;
               </p>
               <button className="w-full bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-colors">
                 Play Now (Coming Soon)
@@ -87,10 +87,10 @@ export default function Lobby() {
             <div className="text-center">
               <div className="text-6xl mb-4">🎯</div>
               <h3 className="text-2xl font-bold text-yellow-400 mb-3 group-hover:text-yellow-300">
-                Prison Yard Plinko
+                County Fair Plinko
               </h3>
               <p className="text-neutral-300 mb-6">
-                &ldquo;Drop that chip and watch it bounce! More exciting than mail call and twice as unpredictable!&rdquo;
+                &ldquo;Drop that chip and watch it bounce! More exciting than a demolition derby and twice as unpredictable!&rdquo;
               </p>
               <button className="w-full bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-colors">
                 Play Now (Coming Soon)
@@ -103,10 +103,10 @@ export default function Lobby() {
             <div className="text-center">
               <div className="text-6xl mb-4">🪙</div>
               <h3 className="text-2xl font-bold text-yellow-400 mb-3 group-hover:text-yellow-300">
-                Tin Cup Roulette
+                Barn Dance Roulette
               </h3>
               <p className="text-neutral-300 mb-6">
-                &ldquo;Spin that wheel faster than a prison riot! Red or black, the house always wins... or does it?&rdquo;
+                &ldquo;Spin that wheel faster than a square dance! Red or black, the house always wins... or does it?&rdquo;
               </p>
               <button className="w-full bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-colors">
                 Play Now (Coming Soon)
@@ -119,10 +119,10 @@ export default function Lobby() {
             <div className="text-center">
               <div className="text-6xl mb-4">💰</div>
               <h3 className="text-2xl font-bold text-yellow-400 mb-3 group-hover:text-yellow-300">
-                Get Out of Jail Free
+                Gold Mine Jackpot
               </h3>
               <p className="text-neutral-300 mb-6">
-                &ldquo;The ultimate jackpot game! Win big enough and you might just earn your freedom... or at least a fancy new pair of shoes!&rdquo;
+                &ldquo;The ultimate jackpot game! Win big enough and you might just strike gold... or at least a fancy new pickup truck!&rdquo;
               </p>
               <button className="w-full bg-yellow-600 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-colors">
                 Play Now (Coming Soon)
@@ -137,7 +137,7 @@ export default function Lobby() {
             Hold Your Horses, Partner!
           </h2>
           <p className="text-neutral-300 mb-4">
-            &ldquo;We&apos;re cookin&apos; up somethin&apos; special in the kitchen. These games are comin&apos; faster than a jailbreak at midnight!&rdquo;
+            &ldquo;We&apos;re cookin&apos; up somethin&apos; special in the kitchen. These games are comin&apos; faster than a coon dog on a scent!&rdquo;
           </p>
           <p className="text-neutral-500 italic">
             Stay tuned for updates - we&apos;ll let you know when the fun begins! 🎰
