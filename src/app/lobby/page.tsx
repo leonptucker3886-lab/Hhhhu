@@ -121,6 +121,24 @@ export default function Lobby() {
             </div>
           </Link>
 
+          {/* Task Force: Duck N Cover */}
+          <Link href="/duck-hunt" className="group">
+            <div className="bg-gradient-to-br from-blue-800 to-blue-900 p-4 md:p-8 rounded-xl border border-blue-700 hover:border-yellow-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105 cursor-pointer">
+              <div className="text-center">
+                <div className="text-4xl md:text-6xl mb-2 md:mb-4">🦆</div>
+                <h3 className="text-lg md:text-2xl font-bold text-yellow-400 mb-2 md:mb-3 group-hover:text-yellow-300">
+                  Duck N Cover
+                </h3>
+                <p className="text-blue-100 text-sm md:text-base mb-3 md:mb-6 line-clamp-2">
+                  &ldquo;Military duck hunting!&rdquo;
+                </p>
+                <div className="text-green-400 font-bold text-sm md:text-lg">
+                  🟢 LIVE NOW
+                </div>
+              </div>
+            </div>
+          </Link>
+
           {/* Moonshine Poker */}
           <div className="bg-gradient-to-br from-neutral-800 to-neutral-900 p-8 rounded-xl border border-neutral-700 hover:border-yellow-500/50 transition-all duration-300 group cursor-pointer">
             <div className="text-center">
