@@ -186,7 +186,7 @@ export default function DetectiveGame() {
             Who&apos;d Snitch?
           </h1>
           <p className="text-xl text-neutral-300 max-w-2xl mx-auto">
-            &ldquo;Someone ratted you out at the lakeside cookout. Find the snitch before they strike again!&rdquo;
+            &ldquo;Someone ratted you out at the pondside cookout. Find the snitch before they strike again!&rdquo;
           </p>
         </div>
 

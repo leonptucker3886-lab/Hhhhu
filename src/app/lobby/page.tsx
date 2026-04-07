@@ -205,7 +205,7 @@ export default function Lobby() {
             &ldquo;Welcome to the Company Cookout Casino! All our games are hot and ready to play!&rdquo;
           </p>
           <p className="text-green-300 italic">
-            Enjoy the lakeside gaming experience! 🎰🏕️
+            Enjoy the pondside gaming experience! 🎰🏕️
           </p>
         </div>
 

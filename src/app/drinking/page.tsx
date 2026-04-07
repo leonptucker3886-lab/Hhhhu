@@ -96,7 +96,7 @@ const DRINKS: Drink[] = [
     difficulty: 5,
     value: 25,
     emoji: '🔥',
-    description: 'Our signature lakeside special!'
+    description: 'Our signature pondside special!'
   }
 ];
 
@@ -379,7 +379,7 @@ export default function DrinkingGame() {
             Drinking Again
           </h1>
           <p className="text-xl text-purple-100 max-w-2xl mx-auto">
-            &ldquo;Welcome to the lakeside bar! Mix drinks, serve customers, and earn those tips!&rdquo;
+            &ldquo;Welcome to the pondside bar! Mix drinks, serve customers, and earn those tips!&rdquo;
           </p>
         </div>
 
