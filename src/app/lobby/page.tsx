@@ -67,6 +67,24 @@ export default function Lobby() {
             </div>
           </Link>
 
+          {/* White Jack Blackjack */}
+          <Link href="/blackjack" className="group">
+            <div className="bg-gradient-to-br from-green-800 to-green-900 p-8 rounded-xl border border-green-700 hover:border-white/50 transition-all duration-300 group-hover:transform group-hover:scale-105 cursor-pointer">
+              <div className="text-center">
+                <div className="text-6xl mb-4">🃏</div>
+                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-gray-200">
+                  White Jack
+                </h3>
+                <p className="text-green-100 mb-6">
+                  &ldquo;Lakeside elegance meets classic blackjack. Clean cards, cool stakes!&rdquo;
+                </p>
+                <div className="text-green-400 font-bold text-lg">
+                  🟢 LIVE NOW
+                </div>
+              </div>
+            </div>
+          </Link>
+
           {/* Moonshine Poker */}
           <div className="bg-gradient-to-br from-neutral-800 to-neutral-900 p-8 rounded-xl border border-neutral-700 hover:border-yellow-500/50 transition-all duration-300 group cursor-pointer">
             <div className="text-center">
