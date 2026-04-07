@@ -256,8 +256,16 @@ export default function DetectiveGame() {
                     onClick={() => setGameState(prev => ({ ...prev, gamePhase: 'betting', currentInterview: null }))}
                     className="px-6 py-2 bg-neutral-600 hover:bg-neutral-500 text-white rounded"
                   >
-                    End Interview
+                    Continue Investigating
                   </button>
+                  {gameState.interviewed.length >= 2 && (
+                    <button
+                      onClick={() => setGameState(prev => ({ ...prev, gamePhase: 'accusation', currentInterview: null }))}
+                      className="px-6 py-2 bg-red-600 hover:bg-red-500 text-white font-bold rounded animate-pulse"
+                    >
+                      🎯 Make Accusation!
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
@@ -273,7 +281,11 @@ export default function DetectiveGame() {
                     onClick={() => makeAccusation(character.id)}
                     className="p-6 md:p-4 rounded-lg border-2 border-red-500 hover:border-red-400 bg-neutral-700 hover:bg-neutral-600 transition-all"
                   >
-                    <div className="text-4xl mb-2">🎯</div>
+                    <img
+                      src={`https://picsum.photos/120/120?random=${character.id}`}
+                      alt={character.name}
+                      className="w-20 h-20 md:w-16 md:h-16 rounded-full mx-auto mb-2 border-2 border-red-400"
+                    />
                     <div className="font-bold text-red-400">{character.name}</div>
                     <div className="text-sm text-neutral-300">Accuse!</div>
                   </button>

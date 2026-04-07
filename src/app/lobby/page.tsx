@@ -85,6 +85,24 @@ export default function Lobby() {
             </div>
           </Link>
 
+          {/* Hiding in the Tree */}
+          <Link href="/tree-hide" className="group">
+            <div className="bg-gradient-to-br from-amber-800 to-amber-900 p-8 rounded-xl border border-amber-700 hover:border-yellow-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105 cursor-pointer">
+              <div className="text-center">
+                <div className="text-6xl mb-4">🌳</div>
+                <h3 className="text-2xl font-bold text-yellow-400 mb-3 group-hover:text-yellow-300">
+                  Hiding in the Tree
+                </h3>
+                <p className="text-amber-100 mb-6">
+                  &ldquo;Spot the critters hidin&apos; in this mighty oak! Find &apos;em before time runs out!&rdquo;
+                </p>
+                <div className="text-green-400 font-bold text-lg">
+                  🟢 LIVE NOW
+                </div>
+              </div>
+            </div>
+          </Link>
+
           {/* Moonshine Poker */}
           <div className="bg-gradient-to-br from-neutral-800 to-neutral-900 p-8 rounded-xl border border-neutral-700 hover:border-yellow-500/50 transition-all duration-300 group cursor-pointer">
             <div className="text-center">
