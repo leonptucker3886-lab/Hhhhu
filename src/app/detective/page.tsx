@@ -166,7 +166,7 @@ export default function DetectiveGame() {
             <span className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">
               Company Cookout
             </span>
-            <span className="text-yellow-400 font-semibold">Detective Mystery</span>
+            <span className="text-yellow-400 font-semibold">Who&apos;d Snitch?</span>
           </Link>
           <div className="flex items-center space-x-4">
             <div className="text-yellow-400 font-bold">
@@ -183,7 +183,7 @@ export default function DetectiveGame() {
         {/* Game Title */}
         <div className="text-center mb-8">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 bg-clip-text text-transparent">
-            Detective Mystery: Who&apos;s the Snitch?
+            Who&apos;d Snitch?
           </h1>
           <p className="text-xl text-neutral-300 max-w-2xl mx-auto">
             &ldquo;Someone ratted you out at the lakeside cookout. Find the snitch before they strike again!&rdquo;
@@ -215,9 +215,12 @@ export default function DetectiveGame() {
                         : 'border-yellow-500 hover:border-yellow-400 bg-neutral-700 hover:bg-neutral-600'
                     }`}
                   >
-                    <div className="text-4xl mb-2">👤</div>
+                    <img
+                      src={`https://picsum.photos/100/100?random=${character.id}`}
+                      alt={character.name}
+                      className="w-16 h-16 rounded-full mx-auto mb-2 border-2 border-yellow-400"
+                    />
                     <div className="font-bold text-yellow-400">{character.name}</div>
-                    <div className="text-sm text-neutral-300">{character.personality.split(',')[0]}</div>
                   </button>
                 ))}
               </div>

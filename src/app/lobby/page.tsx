@@ -37,7 +37,7 @@ export default function Lobby() {
               <div className="text-center">
                 <div className="text-6xl mb-4">🕵️</div>
                 <h3 className="text-2xl font-bold text-yellow-400 mb-3 group-hover:text-yellow-300">
-                  Detective Mystery
+                  Who&apos;d Snitch?
                 </h3>
                 <p className="text-neutral-300 mb-6">
                   &ldquo;Someone snitched at the cookout! Find the rat and send &apos;em to the lake!&rdquo;
