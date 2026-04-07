@@ -203,22 +203,22 @@ export default function DetectiveGame() {
           {gameState.gamePhase === 'betting' && (
             <div className="mt-6 text-center">
               <h3 className="text-2xl font-bold text-yellow-400 mb-4">Choose Your Next Move</h3>
-              <div className="grid md:grid-cols-5 gap-4 max-w-4xl mx-auto">
+              <div className="grid grid-cols-3 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
                 {CHARACTERS.map(character => (
                   <button
                     key={character.id}
                     onClick={() => startInterview(character.id)}
                     disabled={gameState.interviewed.includes(character.id)}
-                    className={`p-4 rounded-lg border-2 transition-all ${
+                    className={`p-6 md:p-4 rounded-lg border-2 transition-all ${
                       gameState.interviewed.includes(character.id)
                         ? 'border-neutral-600 bg-neutral-700 opacity-50 cursor-not-allowed'
                         : 'border-yellow-500 hover:border-yellow-400 bg-neutral-700 hover:bg-neutral-600'
                     }`}
                   >
                     <img
-                      src={`https://picsum.photos/100/100?random=${character.id}`}
+                      src={`https://picsum.photos/120/120?random=${character.id}`}
                       alt={character.name}
-                      className="w-16 h-16 rounded-full mx-auto mb-2 border-2 border-yellow-400"
+                      className="w-20 h-20 md:w-16 md:h-16 rounded-full mx-auto mb-2 border-2 border-yellow-400"
                     />
                     <div className="font-bold text-yellow-400">{character.name}</div>
                   </button>
@@ -266,12 +266,12 @@ export default function DetectiveGame() {
           {gameState.gamePhase === 'accusation' && (
             <div className="mt-6 text-center">
               <h3 className="text-2xl font-bold text-yellow-400 mb-4">Who&apos;s the Snitch?</h3>
-              <div className="grid md:grid-cols-5 gap-4 max-w-4xl mx-auto">
+              <div className="grid grid-cols-3 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
                 {CHARACTERS.map(character => (
                   <button
                     key={character.id}
                     onClick={() => makeAccusation(character.id)}
-                    className="p-4 rounded-lg border-2 border-red-500 hover:border-red-400 bg-neutral-700 hover:bg-neutral-600 transition-all"
+                    className="p-6 md:p-4 rounded-lg border-2 border-red-500 hover:border-red-400 bg-neutral-700 hover:bg-neutral-600 transition-all"
                   >
                     <div className="text-4xl mb-2">🎯</div>
                     <div className="font-bold text-red-400">{character.name}</div>
